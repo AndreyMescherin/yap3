@@ -70,3 +70,13 @@ print(f"Сложение: {f1 + f2}")
 print(f"Вычитание: {f1 - f2}")
 print(f"Умножение: {f1 * f2}")
 print(f"Деление: {f1 / f2}")
+
+
+
+from datetime import datetime
+
+now = datetime.now()
+print('='*50)
+print(f"Текущая дата и время: {now}")
+print(f"Текущая дата: {now.date()}")
+print(f"Текущее время: {now.time()}")
