@@ -99,3 +99,16 @@ days_to_birthday = (next_birthday - today).days
 print('='*50)
 print(f"Дней прошло с рождения: {days_passed}")
 print(f"Дней до следующего дня рождения: {days_to_birthday}")
+
+
+
+def format_date(dt):
+    months = {
+        1: "января", 2: "февраля", 3: "марта", 4: "апреля",
+        5: "мая", 6: "июня", 7: "июля", 8: "августа",
+        9: "сентября", 10: "октября", 11: "ноября", 12: "декабря"
+    }
+    return f"Сегодня {dt.day} {months[dt.month]} {dt.year} года, время: {dt.strftime('%H:%M')}"
+
+print('='*50)
+print(format_date(datetime.now()))
